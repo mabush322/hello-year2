@@ -30,4 +30,12 @@ def report(person):
             best = i
     report['max_name']=best['name']
     return report
-print(report(people))
+def add_people():
+    new = {}
+    new['name'] = input('name ')
+    new['grade'] = input('grade ')
+    new['hours'] = input('hours ')
+    return new
+people.append(add_people())
+for i in people:
+    print(label(i))
