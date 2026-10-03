@@ -18,9 +18,16 @@ def senior(person):
 
 def best_h(person):
     a = person['hours']
-    return int(a)
+    return a
 
-for i in people:
-    if best_h(i)>best_h(best):
-        best = i
-print(label(best))
+def report(person):
+    best = person[0]
+    report = {'count':0,'total':0, 'max_name':''}
+    report['count']=+len(person)
+    for i in person:
+        report['total']+=i['hours']
+        if i['hours']>=best['hours']:
+            best = i
+    report['max_name']=best['name']
+    return report
+print(report(people))
