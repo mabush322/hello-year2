@@ -6,9 +6,16 @@ people = [
           ]
 
 def label(person):
-    a = str(person['name'])
-    b = str(person['grade'])
-    c = str(person['hours'])
+    a = person['name']
+    b = person['grade']
+    c = person['hours']
     return f'{a},{b}-й класс,{c} ч.'
+def senior(person):
+    a = person['grade']
+    if a>= 9:
+        return True
+    else:
+        return False
 for i in people:
-    print(label(i))
+    if senior(i):
+        print(label(i))
