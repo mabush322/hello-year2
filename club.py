@@ -36,6 +36,14 @@ def add_people():
     new['grade'] = input('grade ')
     new['hours'] = input('hours ')
     return new
-people.append(add_people())
-for i in people:
+# people.append(add_people())
+def by_grade(list,min_grade):
+    people = []
+    for i in list:
+        if i['grade']>=min_grade:
+            people.append(i)
+    return people
+found = by_grade(people,9)
+print(len(found))
+for i in found:
     print(label(i))
