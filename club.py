@@ -9,6 +9,6 @@ def label(person):
     a = str(person['name'])
     b = str(person['grade'])
     c = str(person['hours'])
-    return a + ", " + b + ' класс, ' + c +' часов'
+    return f'{a},{b}-й класс,{c} ч.'
 for i in people:
     print(label(i))
