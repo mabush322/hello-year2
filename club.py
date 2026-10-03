@@ -12,10 +12,7 @@ def label(person):
     return f'{a},{b}-й класс,{c} ч.'
 def senior(person):
     a = person['grade']
-    if a>= 9:
-        return True
-    else:
-        return False
+    return a >= 9
 for i in people:
     if senior(i):
         print(label(i))
