@@ -1,0 +1,5 @@
+[
+  {"city": "Maykop", "temperature": 13, "wind":  3},
+  {"city": "Krasnodar", "temperature":  17, "wind": 5},
+  {"city": "Moscow", "temperature":  8, "wind": 2}
+]
